@@ -1,0 +1,20 @@
+
+.sidebar {
+    background-color: #f8f9fa;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #f08f32;
+  }
+  
+  .sidebar .nav-link {
+    color: #333;
+  }
+  
+  .card-header {
+    background-color: #e9ecef;
+  }
+  
+  /* Rest of the styles based on the visual structure you provided */
+  
+  

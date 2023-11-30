@@ -1,0 +1,32 @@
+<div class="container mt-4">
+        <a class="btn btn-outline-warning d-flex float-end" href="addUser">
+          <span data-feather="file"></span>
+          Create User
+        </a>
+</div>
+
+<div class="list-view">
+    <h2>Items List</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.nom }}</td>
+          <td>{{ user.email }}</td>
+            <td class=>
+                <button class="btn btn-primary me-4" (click)="editUser(user)" href="">Edit</button>
+                <button class="btn btn-danger" (click)="deleteUser(user.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
